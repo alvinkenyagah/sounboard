@@ -13,6 +13,9 @@ const sounds = [
   { id: 10, name: "Wasted", file: "/sounds/Wasted.mp3", category: "gaming", icon: "💀" },
   { id: 11, name: "Yamete", file: "/sounds/Yamete.mp3", category: "voice", icon: "🗣️" },
   { id: 12, name: "Green Dog", file: "/sounds/Green.mp3", category: "meme", icon: "🐕" },
+  { id: 13, name: "Monkey", file: "/sounds/Monkey.mp3", category: "meme", icon: "🐒" },
+  { id: 14, name: "Elephant", file: "/sounds/ELEPHANT.mp3", category: "meme", icon: "🐘" },
+  { id: 15, name: "Bruh", file: "/sounds/Bruh.mp3", category: "meme", icon: "🤯" },
 ];
 
 const categoryColors = {
@@ -133,7 +136,7 @@ function App() {
         </div>
 
         {/* Sound Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full max-w-6xl">
+        <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full max-w-6xl">
           {sounds.map((sound) => (
             <button
               key={sound.id}
